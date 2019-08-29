@@ -31,6 +31,10 @@ int main(int argc, char ** argv)
 			case '1': op1 = strtoul(optarg, &endptr, 10); break;
 			case '2': op2 = strtoul(optarg, &endptr, 10); break;
 			case 'w': wr  = 1; val = strtoul(optarg, &endptr, 16); break;
+			case 'h': printf("%s -1 <op1> -n <cn> -m <cm> -2 <op2> [-w <hex>]\n"
+							"  read cp 15 register by 'mrc op1, cn, cm, op2'\n"
+							"  -w <hex> to write tge value (in hex format) into the cp15 register\n",
+							argv[0]);
 			case '?': /* ignored */ break;
 		}
 	}
