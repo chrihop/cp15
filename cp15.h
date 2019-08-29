@@ -8,6 +8,11 @@
 
 #define DEV		"cp15"
 
+#define N_OP0		( 8u)
+#define N_OP1		( 8u)
+#define N_CN		(16u)
+#define N_CM		(16u)
+
 enum direction_t
 {
 	CP15_MRC,
